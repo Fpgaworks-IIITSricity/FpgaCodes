@@ -1,0 +1,12 @@
+# Clock signal
+set_property -dict { PACKAGE_PIN N11    IOSTANDARD LVCMOS33 } [get_ports { clk }];
+
+# Push Buttons (Used as Piano Keys)
+set_property -dict {PACKAGE_PIN K13 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {button[0]}]; # Button-top
+set_property -dict {PACKAGE_PIN L14 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {button[1]}]; # Button-bottom
+set_property -dict {PACKAGE_PIN M12 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {button[2]}]; # Button-left
+set_property -dict {PACKAGE_PIN L13 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {button[3]}]; # Button-right
+set_property -dict {PACKAGE_PIN M14 IOSTANDARD LVCMOS33 PULLDOWN true} [get_ports {button[4]}]; # Button-center
+
+# Buzzer Output
+set_property -dict { PACKAGE_PIN K12    IOSTANDARD LVCMOS33 } [get_ports { buzzer }];
